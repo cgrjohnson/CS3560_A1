@@ -8,3 +8,19 @@
 
   SimulationDriver should contain a main() method that triggers the whole process. 
   You can randomly generate the IDs and answers for a group of students to simulate the submission process and check the results. /*
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class SimulationDriver{
+  //create question type
+      //MC
+      //single answer
+
+  //random generation of students & answers
+
+  //submit student snwers to iVote service
+
+  //call VotingService to display results
+
+}
