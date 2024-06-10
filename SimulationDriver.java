@@ -18,16 +18,16 @@ public class SimulationDriver{
 
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);                                         //intialize scanner for input
-        int userChoice = 0;                                                         //init. userChoice to zero(0)
-        Boolean Flag = false;                                                       //init. flag to false for while loop
-        Question userQuestion = new Question //forgot to update, check var name issues here
-        System.out.println("Welcome to CJ's Fabulous Polling Program!");            //output introduction
+        int userChoice = 0;                                                          //init. userChoice to zero(0)
+        Boolean Flag = false;                                                        //init. flag to false for while loop
+        Question userQuestion = new Question //forgot to update, look for err 
+        System.out.println("Welcome to CJ's Fabulous Polling Program!");             //output introduction
         System.out.println("Let's get started! *audience cheers*");
 
     
         //while loop for user choice of question type 
         while(Flag == false) {
-            System.out.println("Please choose a type of question to ask...");        //give user typeOfQuestion options
+            System.out.println("Please choose a type of question to ask...");         //give user typeOfQuestion options
             System.out.println("Type "1" for Multiple Choice");                      
             System.out.println("Type "2" for True/False");
             userChoice == Integer.parseInt(sc.nextLine());                            //read user input
@@ -47,14 +47,14 @@ public class SimulationDriver{
         }
         System.out.println("");
 
-        System.out.println("Please type in the question you would like to ask:");    //ask user for question
-        String userQuestion == "";                                                   //init. userQuestion to empty String
-        userQuestion == sc.nextLine();                                               //assign input to userQuestion
+        System.out.println("Please type in the question you would like to ask:");     //ask user for question
+        String userQuestion == "";                                                    //init. userQuestion to empty String
+        userQuestion == sc.nextLine();                                                //assign input to userQuestion
 
-      //have user input options for MC questions
-      if( userChoice == 1 ) {
+        //have user input options for MC questions
+        if( userChoice == 1 ) {
                 System.out.println("How many options would you like for your Multiple Choice Question?");
-                int optionAmount = 0;                                                //have user chose number of char options(A, B, C, ...)
+                int optionAmount = 0;                                                 //have user chose number of char options(A, B, C, ...)
                 optionAmount = Integer.parseInt(sc.nextLine());
                 char alphabet = 'A';
                 for(int i = 0; i < optionAmount; i++) {
@@ -97,8 +97,7 @@ public class SimulationDriver{
               System.outprintln("Total Number of Participants Recorded = " + numParticipants);
 
               sc/close();
-    }
+    } //main ends here
 }
   
-  }
-}
+
