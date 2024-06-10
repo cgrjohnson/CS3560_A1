@@ -35,7 +35,7 @@ public class Student {
       int getAnswer(){                          //getter
             return Answer;
       }
-      coid setAnswer(int ans){                  //setter
+      void setAnswer(int ans){                  //setter
             Answer = ans;
       }
       
@@ -48,11 +48,8 @@ public class Student {
       }
       
       //getter & setter method for priorSub     
-      int getPriorSub{                          //getter
+      public int getPriorSub{                          //getter
             return priorSub;
-      }
-      void setPriorSub(int val){                //setter
-            priorSub = val;
       }
       
 }
