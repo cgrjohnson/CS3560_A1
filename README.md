@@ -2,6 +2,10 @@
 
 (don't panic; see editting screen for maximum readability formatting) 
 
+To whom it may concern: Please forgive my commenting style. It's been a *minute* since I've used Java for my programming projects
+A large part of this project has involved attempting to flex those muscles again...
+(and re-learning how to write Java code...hence the beginner-feel of said comments)
+
 Problem Description
 
 Build a Java-based simulation tool based on the live poll idea (mentimeter). This is going to be a pure desktop-based console program, WITHOUT web interactions or graphical UIs required.
@@ -47,5 +51,12 @@ The basic functions of the system include:
     4) SimulationDriver
 
 -include more classes where necessary(not required)
+
+RESOURCES USED:
+    -GitHub(various repositories and FAQ/Informational pages, README files)
+    -Reddit, for troubleshooting and getter/setter refresh
+    -CS 3560 Lecture Notes
+    -Azure.Microsoft.com, for Java refresher
+    -Stackify, Tutorials and Troubleshooting
 
 /*
