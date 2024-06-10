@@ -4,6 +4,7 @@
           1) multiple-choice question (more than one choice can be chosen including one choice), “A”, “B”, “C”, “D”
           2) single choice question (only one choice can be chosen) “1. Right”, “2. Wrong”   /*
 
+package pollingSim;
 import java.util.Vector;                                                    //import Vectors for storage of options/answers
 
 public class Question{
