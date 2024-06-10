@@ -2,7 +2,6 @@
       -have unique Id (String)
       -can submit answers to Voting Service /*
 
-package pollingSim;
       
 //define Student class and corr. variables
 public class Student {
