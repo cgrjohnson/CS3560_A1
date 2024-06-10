@@ -2,7 +2,8 @@
     -Configure the question types and candidate answers
     -Support 2 types of questions: 
           1) multiple-choice question (more than one choice can be chosen including one choice), “A”, “B”, “C”, “D”
-          2) single choice question (only one choice can be chosen) “1. Right”, “2. Wrong”   /*
+          2) single choice question (only one choice can be chosen) “1. Right”, “2. Wrong”   
+/*
 
 import java.util.Vector;                                                    //import Vectors for storage of options/answers
 
@@ -42,7 +43,7 @@ public class Question{
         return optionsToQuestion.get(index);
     }
     int getOptionsToQuestionSize(){
-        return optionsToQuestions.size();
+        return optionsToQuestions.size();        //my villian origin story revolves around forgetting this one line of code
     }
     
     //increase size of answers vector with each submission, record
