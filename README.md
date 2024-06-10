@@ -1,5 +1,7 @@
 */ CS3560_A1
 
+(don't panic; see editting screen for maximum readability formatting) 
+
 Problem Description
 
 Build a Java-based simulation tool based on the live poll idea (mentimeter). This is going to be a pure desktop-based console program, WITHOUT web interactions or graphical UIs required.
