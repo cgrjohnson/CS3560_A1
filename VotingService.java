@@ -8,6 +8,8 @@ You don’t have to use the graphical interface.
 Simply use the standard output (System.out) to print out the count for each answer. 
 For example, “A : 5, B : 12”, or “1. Right : 15, 2. Wrong : 20”. Feel free to customize the format for your output. /*
 
+package pollingSim;
+    
 public class VotingService{
     private int typeOfQuestion = 1;                                                  //intialize question type to MC
     private Question questionn;                                                      //declare Question
