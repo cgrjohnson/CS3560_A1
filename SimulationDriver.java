@@ -61,7 +61,21 @@ public class SimulationDriver{
         
       }
 
-  //random generation of students & answers
+//"ask" participants the question
+          System.out.println("Let's see what our participants think! *jeopardy theme music*");
+          int min = 1;
+          int max = 300;            //so that our results should theothetically follow SD rules, for funsies
+          Random rand = new Random();
+          int numParticipants = rand.nextInt( (max - min) + 1 ) + min )
+          Participant[] arrayParticipants = new Participant[numParticipants]
+
+//Oh NO
+          //generate student IDs and answers
+ //         rand = new Random; 
+          //for loop to ...
+ //         for (int i = 0, i < numParticipants; i++; {
+ //                   arrayParticipants[i] = new Participant("Participant" + i)
+          //need variable for size of optionsForQuestion array, add to Question!!!!!!!!!!!!!! /*
 
   //submission of student answers
 
