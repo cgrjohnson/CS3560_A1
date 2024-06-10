@@ -17,9 +17,9 @@ import java.util.Scanner;
 public class SimulationDriver{
 
     public static void main(String[] args){
-        Scanner sc = new Scanner(System.in)                                         //intialize scanner for input
+        Scanner sc = new Scanner(System.in);                                         //intialize scanner for input
         int userChoice = 0;                                                         //init. userChoice to zero(0)
-        Boolean flag = false;                                                       //init. flag to false for while loop
+        Boolean Flag = false;                                                       //init. flag to false for while loop
         Question userQuestion = new Question //forgot to update, check var name issues here
         System.out.println("Welcome to CJ's Fabulous Polling Program!");            //output introduction
         System.out.println("Let's get started! *audience cheers*");
@@ -39,7 +39,7 @@ public class SimulationDriver{
                 //what happens if they choose T/F, var from Question.java
             }
             else{                                                                     //user enters an invalid input
-                System.out.println("I'm sorry, that is not an accepted input!")
+                System.out.println("I'm sorry, that is not an accepted input!");
                 System.out.println("Please choose from the following...");
                 System.out.println(""1" for Multiple Choice");
                 System.out.println(""2" for True/False");
@@ -52,7 +52,7 @@ public class SimulationDriver{
         userQuestion == sc.nextLine();                                               //assign input to userQuestion
 
       //have user input options for MC questions
-      if( choice == 1 ) {
+      if( userChoice == 1 ) {
                 System.out.println("How many options would you like for your Multiple Choice Question?");
                 int optionAmount = 0;                                                //have user chose number of char options(A, B, C, ...)
                 optionAmount = Integer.parseInt(sc.nextLine());
@@ -65,7 +65,7 @@ public class SimulationDriver{
                           alphabet++
                 }
       }
-      else if( choice == 2 ) {
+      else if( userChoice == 2 ) {
                 userQuestion.addToOptionsForQuestion("True");
                 userQuestion.addToOptionsForQuestion("False");
       }
@@ -87,7 +87,7 @@ public class SimulationDriver{
 
   //submission of student answers
               VotingService newVote = new VotingService();
-              newVote.configurationService(choice, userQuestion);
+              newVote.configurationService(userChoice, userQuestion);
               for(int i = 0; i < numParticipants; i++) {
                         newVote.submit(arrayParticipants[i[);
               }
