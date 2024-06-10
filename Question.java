@@ -36,6 +36,14 @@ public class Question{
         optionsForQuestion.add(val);
         answersToQuestion.add(0);
     }
+
+    //almost missed these(lines 41- 45), remember to be mundful of array sizes when based on user input
+    String getOptionsToQuestion(int index){
+        return optionsToQuestion.get(index);
+    }
+    int getOptionsToQuestionSize(){
+        return optionsToQuestions.size();
+    }
     
     //increase size of answers vector with each submission, record
     void updateAnswersToQuestion(int index, int val) {
