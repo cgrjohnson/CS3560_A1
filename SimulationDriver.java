@@ -19,8 +19,8 @@ public class SimulationDriver{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in)                                         //intialize scanner for input
         int userChoice = 0;                                                         //init. userChoice to zero(0)
-        //variable to hold user's question?
         Boolean flag = false;                                                       //init. flag to false for while loop
+        Question userQuestion = new Question //forgot to update, check var name issues here
         System.out.println("Welcome to CJ's Fabulous Polling Program!");            //output introduction
         System.out.println("Let's get started! *audience cheers*");
 
@@ -52,16 +52,25 @@ public class SimulationDriver{
         userQuestion == sc.nextLine();                                               //assign input to userQuestion
 
       //have user input options for MC questions
-      System.out.println("What are the options for your Multiple Choice Question?");
-          //store MC answer options
-
-      //have user input options for T/F questions
-      System.out.println("What are the options for your True or False Question?");
-          //store T/F answer options
-        
+      if( choice == 1 ) {
+                System.out.println("How many options would you like for your Multiple Choice Question?");
+                int optionAmount = 0;                                                //have user chose number of char options(A, B, C, ...)
+                optionAmount = Integer.parseInt(sc.nextLine());
+                char alphabet = 'A';
+                for(int i = 0; i < optionAmount; i++) {
+                          System.out.print(alphabet + ") ");
+                          String input = "";
+                          input = sc.nextLine();
+                          userQuestion.addToOptionsForQuestion(input);
+                          alphabet++
+                }
+      }
+      else if( choice == 2 ) {
+                userQuestion.addToOptionsForQuestion("True");
+                userQuestion.addToOptionsForQuestion("False");
       }
 
-//"ask" participants the question
+          //"ask" participants the question
           System.out.println("Let's see what our participants think! *jeopardy theme music*");
           int min = 1;
           int max = 300;            //so that our results should theothetically follow SD rules, for funsies
@@ -69,17 +78,27 @@ public class SimulationDriver{
           int numParticipants = rand.nextInt( (max - min) + 1 ) + min )
           Participant[] arrayParticipants = new Participant[numParticipants]
 
-//Oh NO
-          //generate student IDs and answers
- //         rand = new Random; 
-          //for loop to ...
- //         for (int i = 0, i < numParticipants; i++; {
- //                   arrayParticipants[i] = new Participant("Participant" + i)
-          //need variable for size of optionsForQuestion array, add to Question!!!!!!!!!!!!!! /*
+          //generate student IDs and answers using random
+          rand = new Random; 
+          //for loop to randomly generate...
+          for (int i = 0, i < numParticipants; i++; {
+                    arrayParticipants[i] = new Participant("Participant" + i, rand.nextInt(userQuestion.getOptionsForQuestionSize()));
+          }
 
   //submission of student answers
+              VotingService newVote = new VotingService();
+              newVote.configurationService(choice, userQuestion);
+              for(int i = 0; i < numParticipants; i++) {
+                        newVote.submit(arrayParticipants[i[);
+              }
 
   //call VotingService to display results
+              newVote.output();
+              System.outprintln("Total Number of Participants Recorded = " + numParticipants);
+
+              sc/close();
+    }
+}
   
   }
 }
