@@ -23,9 +23,36 @@ public class Student {
       }
       
       //getter & setter method for ID
+      String getID(){                           //getter
+            return ID;
+      }
+      void setID(String val){                   //setter
+            ID = val;
+      }
+      
       //getter & setter method for Answer
+      int getAnswer(){                          //getter
+            return Answer;
+      }
+      coid setAnswer(int ans){                  //setter
+            Answer = ans;
+      }
+      
       //getter & setter method for submitted
-      //getter & setter method for priorSub
-
+      Boolean getSubmitted(){                   //getter
+            return submitted;
+      }
+      void setSubmitted(Boolean val){           //setter
+            submitted = val;
+      }
+      
+      //getter & setter method for priorSub     
+      int getPriorSub{                          //getter
+            return priorSub;
+      }
+      void setPriorSub(int val){                //setter
+            priorSub = val;
+      }
+      
 }
 
