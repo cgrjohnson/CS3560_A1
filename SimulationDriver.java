@@ -11,7 +11,7 @@ SimulationDriver: automatically simulates the process, i.e.:
           -check and output results
 /*
 
-package pollingSim
+package pollingSim;
 import java.util.Random;
 import java.util.Scanner;
 
